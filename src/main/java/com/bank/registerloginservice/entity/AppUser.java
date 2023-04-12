@@ -19,6 +19,19 @@ public class AppUser {
     @Column(nullable=false)
     private String password;
 
+    public AppUser() {
+    }
+
+    public AppUser(Long id, String username, String password) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
+
+    public AppUser(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
     public Long getId() {
         return id;

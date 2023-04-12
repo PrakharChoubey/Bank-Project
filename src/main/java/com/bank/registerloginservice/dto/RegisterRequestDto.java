@@ -11,6 +11,14 @@ public class RegisterRequestDto {
     @NotBlank @Length(min = 2, max = 10)
     private String password;
 
+    public RegisterRequestDto(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public RegisterRequestDto() {
+    }
+
     public String getUsername() {
         return username;
     }

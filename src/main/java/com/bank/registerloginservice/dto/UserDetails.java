@@ -8,6 +8,20 @@ public class UserDetails {
     private String username;
     private String password;
 
+    public UserDetails(long id, String username, String password) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
+
+    public UserDetails() {
+    }
+
+    public UserDetails(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public long getId() {
         return id;
     }
